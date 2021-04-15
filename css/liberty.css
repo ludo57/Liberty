@@ -1,0 +1,872 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.texte {
+    position: relative;
+    width: 40%;
+    height: 100px;
+    left: 30%;
+    top: 40px;
+    font-size: 20px;
+    font-family: "Yantramanav", sans-serif;
+    color: #858181;
+}
+
+#entete {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 65px;
+    background-color: #EE6647;
+    color: white;
+    z-index: 1;
+}
+
+#liberty {
+    position: relative;
+    align-content: center;
+    align-items: center;
+    width: 20%;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 80%;
+    padding-right: 20px;
+}
+
+.menu nav {
+    font-family: "Raleway", sans-serif;
+    list-style: none;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Biryani", sans-serif;
+    font-size: 20px;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#Contact {
+    padding-top: 15px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    left: 0px;
+    text-align: center;
+    font-family: "Poiret One", sans-serif;
+    font-size: 45px;
+    background-color: #152338;
+    color: white;
+}
+
+#Contact a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+}
+
+#Home {
+    width: 100%;
+    height: 750px;
+    line-height: 20px;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: -150px;
+    padding-bottom: 50px;
+}
+
+#logo {
+    display: block;
+    position: relative;
+    top: 200px;
+    margin: auto;
+}
+
+#slogan {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'poiret one', sans-serif;
+    position: relative;
+    top: 200px;
+}
+
+#OurWorks {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    font-family: "Poiret One", sans-serif;
+    font-size: 45px;
+}
+
+#Pricing {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    font-family: "Poiret One", sans-serif;
+    font-size: 45px;
+}
+
+
+/* Container flex "horizontal" pour les 4 tables */
+
+.priceContainer {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 40px;
+    font-family: "Yantramanav", sans-serif;
+}
+
+.priceContainer div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 22%;
+    text-align: center;
+    font-size: 30px;
+}
+
+table,
+tr,
+td {
+    width: 100%;
+    border: 1px solid #C5C3C3;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+/* Définition du filtre sur chaque table au passage de souris*/
+
+table:hover #enTete {
+    background-color: #898e92;
+}
+
+table:hover tr,
+table:hover td,
+table:hover {
+    filter: drop-shadow(2px 3px 6px #524c4c);
+    -webkit-filter: drop-shadow(2px 3px 6px #524c4c);
+}
+
+
+/* Définition de la première case/ligne de chaque table contenant #titre et #prix */
+
+#enTete {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+td #titre {
+    width: 100%;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+td #prix {
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+
+/* Définition de la deuxième case/ligne de chaque table */
+
+td #option {
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 70%;
+    border-bottom: 1px solid #D7E4F3;
+}
+
+#SignUp {
+    width: 200px;
+    height: 35px;
+    background: #152338;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+    font-size: 15px;
+    padding-top: 15px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Spécificités pour la troisième table (#Gold) */
+
+#Gold td {
+    border: 1px solid #409DED;
+}
+
+#Gold #enTete,
+#Gold #SignUp {
+    background-color: #409DED;
+}
+
+#Gold:hover #enTete,
+#Gold:hover #SignUp {
+    background-color: #e7cf62af;
+}
+
+#Gold:hover tr,
+#Gold:hover td {
+    border: 1px solid #e7cf62af;
+}
+
+
+/* Mosaique des images avec un flex "vertical" contenant deux flex "horizontaux" */
+
+#images {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+    margin-top: 40px;
+}
+
+#images div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#ligne1,
+#ligne2 {
+    position: relative;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+}
+
+#ligne1 div,
+#ligne2 div {
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 270px;
+    height: 203px;
+    opacity: 1;
+    display: block;
+}
+
+
+/* Maintenant on définit les images de la mosaique ainsi que leurs filtres au passage de la souris */
+
+
+/* img0 */
+
+#img0 #filtre0 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img0:hover #filtre0 {
+    opacity: 0.6;
+}
+
+#img0 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img0:hover label {
+    opacity: 1;
+}
+
+#img0 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+#img0:hover #Rond {
+    opacity: 1;
+}
+
+
+/* img1 */
+
+#img1 #filtre1 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img1:hover #filtre1 {
+    opacity: 0.6;
+}
+
+#img1 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img1:hover label {
+    opacity: 1;
+}
+
+#img1:hover #Rond {
+    opacity: 1;
+}
+
+#img1 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img2 */
+
+#img2 #filtre2 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img2:hover #filtre2 {
+    opacity: 0.6;
+}
+
+#img2 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img2:hover label {
+    opacity: 1;
+}
+
+#img2:hover #Rond {
+    opacity: 1;
+}
+
+#img2 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img3 */
+
+#img3 #filtre3 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img3:hover #filtre3 {
+    opacity: 0.6;
+}
+
+#img3 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img3:hover label {
+    opacity: 1;
+}
+
+#img3:hover #Rond {
+    opacity: 1;
+}
+
+#img3 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img4 */
+
+#img4 #filtre4 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img4:hover #filtre4 {
+    opacity: 0.6;
+}
+
+#img4 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img4:hover label {
+    opacity: 1;
+}
+
+#img4:hover #Rond {
+    opacity: 1;
+}
+
+#img4 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img5 */
+
+#img5 #filtre5 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img5:hover #filtre5 {
+    opacity: 0.6;
+}
+
+#img5 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img5:hover label {
+    opacity: 1;
+}
+
+#img5:hover #Rond {
+    opacity: 1;
+}
+
+#img5 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img6 */
+
+#img6 #filtre6 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img6:hover #filtre6 {
+    opacity: 0.6;
+}
+
+#img6 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img6:hover label {
+    opacity: 1;
+}
+
+#img6:hover #Rond {
+    opacity: 1;
+}
+
+#img6 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img7 */
+
+#img7 #filtre7 {
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color: #EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img7:hover #filtre7 {
+    opacity: 0.6;
+}
+
+#img7 label {
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img7:hover label {
+    opacity: 1;
+}
+
+#img7:hover #Rond {
+    opacity: 1;
+}
+
+#img7 #Rond {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* Bouton pour accéder à la partie "CONTACT" de la page */
+
+#ContactUs {
+    width: 400px;
+    height: 35px;
+    background: #EE6647;
+    margin-left: 550px;
+    margin-top: 250px;
+    border-radius: 50px;
+    border: 0px;
+    color: white;
+}
+
+#ContactUs a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+}
+
+
+/* Container pour l'ensemble du formulaire */
+
+#Contact #formContainer {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 10%;
+}
+
+
+/* Formulaire de saisie de texte sur la moitié gauche de #formContainer */
+
+#formLeft {
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 200px;
+    border-radius: 2px;
+    color: #858181;
+}
+
+input {
+    box-shadow: none;
+    border: 0 none;
+}
+
+
+/* Formulaire d'entrée de données (nom, email, direction) avec un bouton d'envoi sur la moitié droite de #formContainer */
+
+#formRight {
+    position: relative;
+    left: 2%;
+    width: 100%;
+    height: 200px;
+    line-height: 30px;
+    border-radius: 2px;
+    color: #858181;
+}
+
+#entree {
+    width: 48%;
+    height: 50px;
+    margin-bottom: 15px;
+    color: #858181;
+}
+
+input,
+select {
+    border-radius: 2px;
+}
+
+select {
+    width: 32%;
+    height: 50px;
+}
+
+#send {
+    width: 15%;
+    height: 50px;
+    background-color: #EE6647;
+    color: white;
+}
+
+#FLECHE {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 735px;
+    top: -20px;
+}
+
+
+/* Rond orange */
+
+#GoToTop {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #EE6647;
+}
+
+
+/* positionnement de la flèche blanche créée en svg définie dans le html */
+
+#fleche {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: -37px;
+    left: 0px;
+}
+
+
+/* Bas de page avec les informations et les logos */
+
+#Footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.logo-reseau {
+    display: flex;
+    width: 30%;
+    height: 55px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.logo-reseau div {
+    width: auto;
+    padding: 3px;
+    justify-content: center;
+}
+
+.facebook {
+    color: blue;
+}
+
+.twitter {
+    color: blue;
+}
+
+.google-plus {
+    color: red;
+}
+
+p>i {
+    justify-content: center;
+    font-size: 20px;
+}
